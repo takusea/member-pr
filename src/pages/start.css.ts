@@ -11,6 +11,22 @@ export const styles = {
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		gap: 8,
+		gap: 32,
+	}),
+	inner: style({
+		width: "800px",
+		fontSize: "1.125rem",
+		display: "flex",
+		flexDirection: "column",
+		textAlign: "center",
+		gap: 16,
+	}),
+	footer: style({
+		display: "flex",
+		gap: 16,
+	}),
+	title: style({
+		fontSize: "2rem",
+		fontWeight: "bold",
 	}),
 };

@@ -5,7 +5,7 @@ import { styles } from "./process.css.ts";
 function Process() {
 	return (
 		<div className={styles.container}>
-			<h1>ワークショップの手順</h1>
+			<h1 className={styles.title}>ワークショップの手順</h1>
 			<div className={styles.process_list}>
 				<ProcessButton
 					subText="カードを使って"
@@ -32,7 +32,9 @@ function Process() {
 					minutes="40"
 				/>
 			</div>
-			<LinkButton to="/start">戻る</LinkButton>
+			<div className={styles.footer}>
+				<LinkButton to="/start">戻る</LinkButton>
+			</div>
 		</div>
 	);
 }

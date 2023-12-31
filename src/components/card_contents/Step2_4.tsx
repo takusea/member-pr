@@ -12,7 +12,7 @@ function CardContentss() {
 					と感じていただけたら、その発見をみんなに伝えていきましょう！
 				</p>
 			</div>
-			<img className={styles.img} src="images/step2_3.png" alt="" />
+			<img className={styles.img} src="images/step2_4.png" alt="" />
 		</CardContent>
 	);
 }

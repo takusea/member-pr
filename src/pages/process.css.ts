@@ -20,4 +20,12 @@ export const styles = {
 		alignItems: "center",
 		gap: 64,
 	}),
+	footer: style({
+		display: "flex",
+		gap: 16,
+	}),
+	title: style({
+		fontSize: "2rem",
+		fontWeight: "bold",
+	}),
 };
