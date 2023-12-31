@@ -5,6 +5,7 @@ type Props = {
 	onClick: () => void;
 	iconPath?: string;
 	iconRightSide?: boolean;
+	disabled?: boolean;
 };
 
 function Button(props: Props) {
@@ -16,6 +17,7 @@ function Button(props: Props) {
 					props.iconRightSide ?? styles.root_reverse
 				}`}
 				onClick={props.onClick}
+				disabled={props.disabled}
 			>
 				{props.children}
 				<img src={props.iconPath} alt="" />

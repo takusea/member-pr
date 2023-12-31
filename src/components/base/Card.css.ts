@@ -9,7 +9,7 @@ export const styles = {
 		borderColor: "#000",
 		display: "flex",
 		flexDirection: "column",
-		alignItems: "center",
+		alignItems: "stretch",
 		gap: 40,
 	}),
 	content: style({
@@ -19,11 +19,11 @@ export const styles = {
 		display: "flex",
 		zIndex: 2,
 		transition: "transform 0.4s",
-    transitionTimingFunction: "cubic-bezier(0.23, 1, 0.32, 1)",
+		transitionTimingFunction: "cubic-bezier(0.23, 1, 0.32, 1)",
 	}),
 	footer: style({
 		display: "flex",
-		alignItems: "center",
+		justifyContent: "center",
 		gap: 8,
 	}),
 };

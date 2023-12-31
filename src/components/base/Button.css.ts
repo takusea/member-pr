@@ -13,6 +13,9 @@ export const styles = {
 		flexDirection: "row",
 		alignItems: "center",
 		gap: 8,
+		":disabled": {
+			opacity: 0,
+		},
 	}),
 	root_reverse: style({
 		flexDirection: "row-reverse",
