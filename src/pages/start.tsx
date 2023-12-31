@@ -4,7 +4,14 @@ import { styles } from "./start.css.ts";
 function Start() {
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.title}>はじめに</h1>
+			<div className={styles.header}>
+				<h1 className={styles.title}>はじめに</h1>
+				<div className={styles.home_button}>
+					<LinkButton type="text" iconRightSide icon="home" to="/">
+						ホーム
+					</LinkButton>
+				</div>
+			</div>
 			<div className={styles.inner}>
 				<p>
 					このワークショップは、メンバー間の相互理解を深め、成果に向けてチームのコミュニケーションを活性化させることができます。

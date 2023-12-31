@@ -1,14 +1,22 @@
+import LinkButton from "../components/base/LinkButton.tsx";
 import { styles } from "./product.css.ts";
 
 function Step1() {
 	return (
 		<div className={styles.container}>
-			<ul className={styles.tab}>
-				<li className={styles.tab_item}>〇〇〇〇〇〇</li>
-				<li className={styles.tab_item}>〇〇〇〇〇〇</li>
-				<li className={styles.tab_item}>〇〇〇〇</li>
-				<li className={styles.tab_item}>〇〇〇〇〇〇〇〇</li>
-			</ul>
+			<div className={styles.header}>
+				<ul className={styles.tab}>
+					<li className={styles.tab_item}>〇〇〇〇〇〇</li>
+					<li className={styles.tab_item}>〇〇〇〇〇〇</li>
+					<li className={styles.tab_item}>〇〇〇〇</li>
+					<li className={styles.tab_item}>〇〇〇〇〇〇〇〇</li>
+				</ul>
+				<div className={styles.home_button}>
+					<LinkButton type="text" iconRightSide icon="home" to="/">
+						ホーム
+					</LinkButton>
+				</div>
+			</div>
 			<div className={styles.card}>
 				<div>
 					<img src="images/product_ex.png" alt="" />

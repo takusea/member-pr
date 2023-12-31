@@ -5,7 +5,14 @@ import { styles } from "./process.css.ts";
 function Process() {
 	return (
 		<div className={styles.container}>
-			<h1 className={styles.title}>ワークショップの手順</h1>
+			<div className={styles.header}>
+				<h1 className={styles.title}>ワークショップの手順</h1>
+				<div className={styles.home_button}>
+					<LinkButton type="text" iconRightSide icon="home" to="/">
+						ホーム
+					</LinkButton>
+				</div>
+			</div>
 			<div className={styles.process_list}>
 				<div className={styles.process_lower}>
 					<ProcessButton
@@ -43,6 +50,15 @@ function Process() {
 			<div className={styles.footer}>
 				<LinkButton type="text" icon="left_arrow" to="/start">
 					戻る
+				</LinkButton>
+				<LinkButton
+					type="text"
+					icon="right_arrow"
+					iconRightSide
+					to="/"
+					disabled
+				>
+					次へ
 				</LinkButton>
 			</div>
 		</div>

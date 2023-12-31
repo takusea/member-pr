@@ -22,12 +22,26 @@ export const styles = {
 		gap: 16,
 		lineHeight: "1.5",
 	}),
-	footer: style({
-		display: "flex",
-		gap: 16,
+	header: style({
+		maxWidth: 800,
+		width: "100%",
+		height: 64,
+		position: "relative",
 	}),
 	title: style({
 		fontSize: "2rem",
 		fontWeight: "bold",
+		textAlign: "center",
+		lineHeight: "64px",
+	}),
+	home_button: style({
+		position: "absolute",
+		right: 0,
+		top: 0,
+		bottom: 0,
+	}),
+	footer: style({
+		display: "flex",
+		gap: 16,
 	}),
 };

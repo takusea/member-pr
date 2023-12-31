@@ -14,7 +14,8 @@ export const styles = {
 	}),
 	card: style({
 		padding: "48px 64px",
-		minWidth: 1000,
+		maxWidth: 1000,
+		width: "100%",
 		minHeight: 640,
 		borderRadius: 10,
 		backgroundColor: "#fff",
@@ -24,8 +25,17 @@ export const styles = {
 		flexDirection: "column",
 		gap: 40,
 	}),
+	header: style({
+		maxWidth: 1000,
+		width: "100%",
+		height: 64,
+		position: "relative",
+	}),
 	tab: style({
 		display: "flex",
+		position: "absolute",
+		left: 8,
+		bottom: 0,
 	}),
 	tab_item: style({
 		height: 48,
@@ -41,5 +51,11 @@ export const styles = {
 		borderColor: "#000",
 		marginRight: -16,
 		borderRadius: "12px 12px 0 0",
+	}),
+	home_button: style({
+		position: "absolute",
+		right: 0,
+		top: 0,
+		bottom: 0,
 	}),
 };
