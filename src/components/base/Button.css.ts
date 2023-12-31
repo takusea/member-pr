@@ -12,9 +12,13 @@ export const styles = {
 		justifyContent: "center",
 		alignItems: "center",
 		gap: 8,
+		transition: "background-color 0.2s",
 		":disabled": {
 			opacity: 0,
 		},
+	}),
+	root_disabled: style({
+		opacity: 0,
 	}),
 	root_reverse: style({
 		flexDirection: "row-reverse",
@@ -23,12 +27,21 @@ export const styles = {
 		borderWidth: 4,
 		backgroundColor: "#fff",
 		borderColor: "#000",
+		":hover": {
+			backgroundColor: "#eee",
+		},
 	}),
 	root_text: style({
 		textDecoration: "underline",
+		":hover": {
+			backgroundColor: "#0001",
+		},
 	}),
 	root_fill: style({
-		backgroundColor: "#000",
+		backgroundColor: "#1e1e1e",
 		color: "#fff",
+		":hover": {
+			backgroundColor: "#333",
+		},
 	}),
 };

@@ -30,10 +30,10 @@ function Button(props: Props) {
 	return (
 		<>
 			<Link
-				to={props.to}
+				to={!props.disabled ? props.to : ""}
 				className={`${styles.root} ${getStyle(props.type)} ${
 					props.iconRightSide ?? styles.root_reverse
-				}`}
+				} ${props.disabled ? styles.root_disabled : ""}`}
 			>
 				{props.children}
 				{props.icon ? <Icon name={props.icon} /> : ""}
