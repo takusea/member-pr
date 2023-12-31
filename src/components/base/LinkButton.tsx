@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { styles } from "./Button.css.ts";
+import Icon from "./Icon.tsx";
 
 type ButtonType = "text" | "outline" | "fill";
 
@@ -7,7 +8,7 @@ type Props = {
 	type?: ButtonType;
 	children: string;
 	to: string;
-	iconPath?: string;
+	icon?: string;
 	iconRightSide?: boolean;
 	disabled?: boolean;
 };
@@ -35,7 +36,7 @@ function Button(props: Props) {
 				}`}
 			>
 				{props.children}
-				<img src={props.iconPath} alt="" />
+				{props.icon ? <Icon name={props.icon} /> : ""}
 			</Link>
 		</>
 	);

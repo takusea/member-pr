@@ -3,6 +3,7 @@ import Button from "../base/Button.tsx";
 import CardContent from "../base/CardContent.tsx";
 import { styles } from "./CardContent.css.ts";
 import { useState } from "react";
+import Icon from "../base/Icon.tsx";
 
 type Props = {
 	onExpire: () => void;
@@ -24,7 +25,9 @@ function CardContentV(props: Props) {
 		<CardContent>
 			<div className={`${styles.section} ${styles.section_center}`}>
 				<div className={styles.desc}>
-					<img className={styles.desc_icon} src="icons/timer.png" alt="" />
+					<span className={styles.desc_icon}>
+						<Icon name="timer" />
+					</span>
 					40分程度
 				</div>
 				<h2 className={styles.headline}>準備ができたら開始してください</h2>

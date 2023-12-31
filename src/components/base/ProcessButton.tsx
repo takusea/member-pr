@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { styles } from "./ProcessButton.css.ts";
+import Icon from "./Icon.tsx";
 
 type Props = {
 	subText: string;
@@ -26,11 +27,9 @@ function Button(props: Props) {
 					<p className={styles.text_main}>{props.mainText}</p>
 				</div>
 				<p className={styles.text_minutes}>
-					<img
-						className={styles.text_minutes_icon}
-						src="icons/timer.png"
-						alt=""
-					/>
+					<span className={styles.text_minutes_icon}>
+						<Icon name="timer" />
+					</span>
 					{props.minutes}分程度
 				</p>
 			</div>

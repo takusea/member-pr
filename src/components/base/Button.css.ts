@@ -2,11 +2,11 @@ import { style } from "@vanilla-extract/css";
 
 export const styles = {
 	root: style({
+		fontWeight: "bold",
 		paddingLeft: 32,
 		paddingRight: 32,
 		height: 64,
 		borderRadius: 10,
-		backgroundColor: "#fff",
 		display: "flex",
 		flexDirection: "row",
 		justifyContent: "center",
@@ -21,10 +21,10 @@ export const styles = {
 	}),
 	root_outline: style({
 		borderWidth: 4,
+		backgroundColor: "#fff",
 		borderColor: "#000",
 	}),
 	root_text: style({
-		flexDirection: "row-reverse",
 		textDecoration: "underline",
 	}),
 	root_fill: style({
