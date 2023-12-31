@@ -2,7 +2,7 @@ import { style } from "@vanilla-extract/css";
 
 export const styles = {
 	root: style({
-		padding: 80,
+		padding: "48px 80px",
 		borderRadius: 10,
 		backgroundColor: "#fff",
 		borderWidth: 4,
