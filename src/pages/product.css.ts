@@ -1,0 +1,45 @@
+import { style } from "@vanilla-extract/css";
+
+export const styles = {
+	container: style({
+		width: "100vw",
+		height: "100vh",
+		backgroundColor: "#fff",
+		backgroundPosition: "center",
+		backgroundRepeat: "no-repeat",
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
+	}),
+	card: style({
+		padding: "48px 64px",
+		minWidth: 1000,
+		minHeight: 640,
+		borderRadius: 10,
+		backgroundColor: "#fff",
+		borderWidth: 4,
+		borderColor: "#000",
+		display: "flex",
+		flexDirection: "column",
+		gap: 40,
+	}),
+	tab: style({
+		display: "flex",
+	}),
+	tab_item: style({
+		height: 48,
+		padding: "0 24px",
+		display: "flex",
+		flexDirection: "column",
+		justifyContent: "center",
+		fontWeight: "bold",
+		alignItems: "center",
+		backgroundColor: "#D9D9D9",
+		borderWidth: 4,
+		borderBottom: "none",
+		borderColor: "#000",
+		marginRight: -16,
+		borderRadius: "12px 12px 0 0",
+	}),
+};
