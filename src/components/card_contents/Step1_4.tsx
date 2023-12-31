@@ -15,7 +15,7 @@ time.setSeconds(time.getSeconds() + 2400);
 function CardContentV(props: Props) {
 	const [isStarted, setStarted] = useState(false);
 
-	const { seconds, minutes, start } = useTimer({
+	const { seconds, minutes, restart } = useTimer({
 		expiryTimestamp: time,
 		autoStart: false,
 		onExpire: props.onExpire,
@@ -45,7 +45,9 @@ function CardContentV(props: Props) {
 					<Button
 						type="fill"
 						onClick={() => {
-							start();
+							const _time = new Date();
+							_time.setSeconds(_time.getSeconds() + 2400);
+							restart(_time);
 							setStarted(true);
 						}}
 					>

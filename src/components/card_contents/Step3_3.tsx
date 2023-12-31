@@ -15,7 +15,7 @@ time.setSeconds(time.getSeconds() + 2400);
 function CardContentV(props: Props) {
 	const [isStarted, setStarted] = useState(false);
 
-	const { seconds, minutes, start } = useTimer({
+	const { seconds, minutes, restart } = useTimer({
 		expiryTimestamp: time,
 		autoStart: false,
 		onExpire: props.onExpire,
