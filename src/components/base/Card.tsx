@@ -34,14 +34,16 @@ function Card(props: Props) {
 					<>
 						<Button
 							onClick={decrease}
-							iconPath="icons/left_arrow.png"
+							type="text"
+							icon="left_arrow"
 							disabled={currentIndex === 0}
 						>
 							戻る
 						</Button>
 						<Button
 							onClick={increase}
-							iconPath="icons/right_arrow.png"
+							type="text"
+							icon="right_arrow"
 							iconRightSide
 							disabled={currentIndex === Children.count(props.children) - 1}
 						>

@@ -58,7 +58,6 @@ export const styles = {
 		color: "#9D9E9E",
 	}),
 	text_minutes_icon: style({
-		width: 24,
 		marginRight: 8,
 		verticalAlign: "text-bottom",
 	}),

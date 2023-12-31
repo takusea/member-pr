@@ -9,11 +9,13 @@ export const styles = {
 	}),
 	title: style({
 		fontSize: "2rem",
+		fontWeight: "bold",
 	}),
 	step: style({
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
+		fontWeight: "bold",
 	}),
 	step_num: style({
 		fontSize: "3rem",

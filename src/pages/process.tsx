@@ -41,7 +41,9 @@ function Process() {
 				</div>
 			</div>
 			<div className={styles.footer}>
-				<LinkButton to="/start">戻る</LinkButton>
+				<LinkButton type="text" icon="left_arrow" to="/start">
+					戻る
+				</LinkButton>
 			</div>
 		</div>
 	);

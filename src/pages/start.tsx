@@ -15,8 +15,12 @@ function Start() {
 			</div>
 			<img src="images/start.png" alt="" />
 			<div className={styles.footer}>
-				<LinkButton to="/">戻る</LinkButton>
-				<LinkButton to="/process">次へ</LinkButton>
+				<LinkButton type="text" icon="left_arrow" to="/">
+					戻る
+				</LinkButton>
+				<LinkButton type="text" icon="right_arrow" iconRightSide to="/process">
+					次へ
+				</LinkButton>
 			</div>
 		</div>
 	);
