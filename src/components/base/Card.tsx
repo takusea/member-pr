@@ -30,22 +30,29 @@ function Card(props: Props) {
 				</div>
 			</div>
 			<div className={styles.footer}>
-				<Button
-					onClick={decrease}
-					iconPath="icons/left_arrow.png"
-					disabled={currentIndex === 0}
-				>
-					戻る
-				</Button>
-				<Button
-					onClick={increase}
-					iconPath="icons/right_arrow.png"
-					iconRightSide
-					disabled={currentIndex === 3}
-				>
-					次へ
-				</Button>
-				{props.finished ?? <Button onClick={increase}>終了</Button>}
+				{!props.finished ? (
+					<>
+						<Button
+							onClick={decrease}
+							iconPath="icons/left_arrow.png"
+							disabled={currentIndex === 0}
+						>
+							戻る
+						</Button>
+						<Button
+							onClick={increase}
+							iconPath="icons/right_arrow.png"
+							iconRightSide
+							disabled={currentIndex === 3}
+						>
+							次へ
+						</Button>
+					</>
+				) : (
+					<Button type="text" onClick={props.onFinishButtonClick}>
+						終了
+					</Button>
+				)}
 			</div>
 		</div>
 	);

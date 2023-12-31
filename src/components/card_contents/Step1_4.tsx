@@ -2,19 +2,22 @@ import { useTimer } from "react-timer-hook";
 import Button from "../base/Button";
 import CardContent from "../base/CardContent";
 import { styles } from "./CardContent.css.ts";
+import { useState } from "react";
 
 type Props = {
 	onExpire: () => void;
 };
 
 const time = new Date();
-time.setSeconds(time.getSeconds() + 2400); // 10 minutes timer
+time.setSeconds(time.getSeconds() + 2400);
 
 function CardContentV(props: Props) {
-	const { seconds, minutes, isRunning, start } = useTimer({
+	const [isStarted, setStarted] = useState(false);
+
+	const { seconds, minutes, start } = useTimer({
 		expiryTimestamp: time,
 		autoStart: false,
-		onExpire: () => props.onExpire,
+		onExpire: props.onExpire,
 	});
 
 	return (
@@ -30,13 +33,21 @@ function CardContentV(props: Props) {
 				<img className={styles.img} src="images/step1_4.png" alt="" />
 			</div>
 			<div className={`${styles.section} ${styles.section_center}`}>
-				{isRunning ? (
+				{isStarted ? (
 					<span className={styles.timer}>
 						{String(minutes).padStart(2, "0")}:
 						{String(seconds).padStart(2, "0")}
 					</span>
 				) : (
-					<Button onClick={start}>開始</Button>
+					<Button
+						type="fill"
+						onClick={() => {
+							start();
+							setStarted(true);
+						}}
+					>
+						開始
+					</Button>
 				)}
 			</div>
 		</CardContent>
