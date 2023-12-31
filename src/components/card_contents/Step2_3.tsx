@@ -1,20 +1,20 @@
 import CardContent from "../base/CardContent.tsx";
 import { styles } from "./CardContent.css.ts";
 
-function CardContentV() {
+function CardContentss() {
 	return (
 		<CardContent>
 			<div className={`${styles.section} ${styles.section_center}`}>
 				<p className={`${styles.desc}`}>
-					メンバーがみつけてくれた「才能」を確認してください！
+					次に「才能」と「興味」の中から上手く掛け合わせそうなペアを見つけ、
 				</p>
 				<p className={`${styles.desc}`}>
-					以下の公式に従って、自身の強みとなるものをみつけていきます。
+					強みの欄に移動させてください！ペア数はいくつでもOKです。
 				</p>
 			</div>
-			<img className={styles.img} src="images/step2_1.png" alt="" />
+			<img className={styles.img} src="images/step2_3.png" alt="" />
 		</CardContent>
 	);
 }
 
-export default CardContentV;
+export default CardContentss;

@@ -27,6 +27,7 @@ export const styles = {
 	img: style({
 		display: "block",
 		margin: "auto",
+		maxWidth: "100%",
 	}),
 	subheadline: style({
 		fontSize: "1rem",
