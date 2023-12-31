@@ -1,15 +1,18 @@
 import CardContent from "../base/CardContent";
+import { styles } from "./CardContent.css.ts";
 
 function CardContentV() {
 	return (
 		<CardContent>
-			<p className="desc">
-				2種類のカードを使って才能をみつけるための対話を行ないます！
-			</p>
-			<p className="desc">
-				1人ずつ答える役と深ぼる役になり、対話の順番を回していきましょう。
-			</p>
-			<img src="images/step1_1.png" alt="" />
+			<div className={`${styles.section} ${styles.section_center}`}>
+				<p className={`${styles.desc}`}>
+					2種類のカードを使って才能をみつけるための対話を行ないます！
+				</p>
+				<p className={`${styles.desc}`}>
+					1人ずつ答える役と深ぼる役になり、対話の順番を回していきましょう。
+				</p>
+			</div>
+			<img className={styles.img} src="images/step1_1.png" alt="" />
 		</CardContent>
 	);
 }
