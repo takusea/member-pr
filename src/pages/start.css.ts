@@ -14,12 +14,13 @@ export const styles = {
 		gap: 32,
 	}),
 	inner: style({
-		width: "800px",
+		maxWidth: "800px",
 		fontSize: "1.125rem",
 		display: "flex",
 		flexDirection: "column",
 		textAlign: "center",
 		gap: 16,
+		lineHeight: "1.5",
 	}),
 	footer: style({
 		display: "flex",

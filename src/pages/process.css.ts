@@ -20,6 +20,12 @@ export const styles = {
 		alignItems: "center",
 		gap: 64,
 	}),
+	process_upper: style({
+		marginBottom: 48,
+	}),
+	process_lower: style({
+		marginTop: 48,
+	}),
 	footer: style({
 		display: "flex",
 		gap: 16,

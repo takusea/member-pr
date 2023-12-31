@@ -7,30 +7,38 @@ function Process() {
 		<div className={styles.container}>
 			<h1 className={styles.title}>ワークショップの手順</h1>
 			<div className={styles.process_list}>
-				<ProcessButton
-					subText="カードを使って"
-					mainText="対話をする"
-					step="1"
-					minutes="40"
-				/>
-				<ProcessButton
-					subText="カードを使って"
-					mainText="対話をする"
-					step="2"
-					minutes="40"
-				/>
-				<ProcessButton
-					subText="カードを使って"
-					mainText="対話をする"
-					step="3"
-					minutes="40"
-				/>
-				<ProcessButton
-					subText="カードを使って"
-					mainText="対話をする"
-					step="4"
-					minutes="40"
-				/>
+				<div className={styles.process_lower}>
+					<ProcessButton
+						subText="カードを使って"
+						mainText="対話をする"
+						step="1"
+						minutes="40"
+					/>
+				</div>
+				<div className={styles.process_upper}>
+					<ProcessButton
+						subText="自身の強みを"
+						mainText="みつける"
+						step="2"
+						minutes="15"
+					/>
+				</div>
+				<div className={styles.process_lower}>
+					<ProcessButton
+						subText="お題に合わせて"
+						mainText="制作する"
+						step="3"
+						minutes="40"
+					/>
+				</div>
+				<div className={styles.process_upper}>
+					<ProcessButton
+						subText="メンバーの魅力を"
+						mainText="PRする"
+						step="4"
+						minutes="15"
+					/>
+				</div>
 			</div>
 			<div className={styles.footer}>
 				<LinkButton to="/start">戻る</LinkButton>

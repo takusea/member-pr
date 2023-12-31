@@ -13,4 +13,17 @@ export const styles = {
 		alignItems: "center",
 		gap: 8,
 	}),
+	text: style({
+		fontSize: "1.125rem",
+		lineHeight: "1.5",
+		textAlign: "center",
+		marginBottom: 48,
+	}),
+	button_container: style({
+		display: "flex",
+		flexDirection: "column",
+		gap: 16,
+		width: 240,
+		marginBottom: 8,
+	}),
 };

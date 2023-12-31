@@ -9,6 +9,7 @@ export const styles = {
 		backgroundColor: "#fff",
 		display: "flex",
 		flexDirection: "row",
+		justifyContent: "center",
 		alignItems: "center",
 		gap: 8,
 		":disabled": {
