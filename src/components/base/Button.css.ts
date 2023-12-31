@@ -24,6 +24,7 @@ export const styles = {
 	}),
 	root_text: style({
 		flexDirection: "row-reverse",
+		textDecoration: "underline",
 	}),
 	root_fill: style({
 		backgroundColor: "#000",

@@ -5,7 +5,7 @@ export const styles = {
 		display: "flex",
 		width: "100%",
 		alignItems: "center",
-		gap: 8,
+		gap: 16,
 	}),
 	step: style({
 		display: "flex",
@@ -16,7 +16,7 @@ export const styles = {
 		fontSize: "2rem",
 	}),
 	step_num: style({
-		fontSize: "4rem",
+		fontSize: "3rem",
 	}),
 	home: style({
 		marginLeft: "auto",
