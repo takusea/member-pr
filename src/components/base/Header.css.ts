@@ -7,13 +7,13 @@ export const styles = {
 		alignItems: "center",
 		gap: 16,
 	}),
+	title: style({
+		fontSize: "2rem",
+	}),
 	step: style({
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
-	}),
-	title: style({
-		fontSize: "2rem",
 	}),
 	step_num: style({
 		fontSize: "3rem",
