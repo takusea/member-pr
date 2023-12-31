@@ -30,7 +30,7 @@ function CardContentV(props: Props) {
 				<h2 className={styles.headline}>準備ができたら開始してください</h2>
 			</div>
 			<div className={`${styles.section} ${styles.section_center}`}>
-				<img className={styles.img} src="images/step3_3.png" alt="" />
+				<img className={styles.img} src="images/step3.png" alt="" />
 			</div>
 			<div className={`${styles.section} ${styles.section_center}`}>
 				{isStarted ? (
