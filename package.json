@@ -16,7 +16,8 @@
 		"@vanilla-extract/css": "^1.14.0",
 		"destyle.css": "^4.0.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-timer-hook": "^3.0.7"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.4.1",
