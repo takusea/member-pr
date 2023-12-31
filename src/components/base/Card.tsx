@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { Children, ReactNode, useState } from "react";
 import { styles } from "./Card.css.ts";
 import Button from "./Button.tsx";
 
@@ -43,7 +43,7 @@ function Card(props: Props) {
 							onClick={increase}
 							iconPath="icons/right_arrow.png"
 							iconRightSide
-							disabled={currentIndex === 3}
+							disabled={currentIndex === Children.count(props.children) - 1}
 						>
 							次へ
 						</Button>
