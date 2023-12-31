@@ -7,8 +7,6 @@ export const styles = {
 		height: 64,
 		borderRadius: 10,
 		backgroundColor: "#fff",
-		borderWidth: 4,
-		borderColor: "#000",
 		display: "flex",
 		flexDirection: "row",
 		alignItems: "center",
@@ -19,5 +17,16 @@ export const styles = {
 	}),
 	root_reverse: style({
 		flexDirection: "row-reverse",
+	}),
+	root_outline: style({
+		borderWidth: 4,
+		borderColor: "#000",
+	}),
+	root_text: style({
+		flexDirection: "row-reverse",
+	}),
+	root_fill: style({
+		backgroundColor: "#000",
+		color: "#fff",
 	}),
 };
