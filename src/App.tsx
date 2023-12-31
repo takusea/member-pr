@@ -1,26 +1,19 @@
-import "./App.css";
-import Header from "./components/base/Header";
-import Card from "./components/base/Card";
-
-import Step1_1 from "./components/card_contents/Step1_1";
-import Step1_2 from "./components/card_contents/Step1_2";
-import Step1_3 from "./components/card_contents/Step1_3";
-import Step1_4 from "./components/card_contents/Step1_4";
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Step1 from "./pages/step1";
+import Step2 from "./pages/step2";
+import Step3 from "./pages/step3";
+import Step4 from "./pages/step4";
 
 function App() {
-	const [finished, setFinished] = useState(false);
-
 	return (
-		<div className="container">
-			<Header step="1">カードを使って対話をする</Header>
-			<Card finished={finished} onFinishButtonClick={() => {}}>
-				<Step1_1 />
-				<Step1_2 />
-				<Step1_3 />
-				<Step1_4 onExpire={() => setFinished(true)} />
-			</Card>
-		</div>
+		<BrowserRouter>
+			<Routes>
+				<Route path="step_1" element={<Step1 />} />
+				<Route path="step_2" element={<Step2 />} />
+				<Route path="step_3" element={<Step3 />} />
+				<Route path="step_4" element={<Step4 />} />
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
