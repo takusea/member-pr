@@ -2,10 +2,9 @@ import "../App.css";
 import Header from "../components/base/Header";
 import Card from "../components/base/Card";
 
-import Step1_1 from "../components/card_contents/Step1_1";
-import Step1_2 from "../components/card_contents/Step1_2";
-import Step1_3 from "../components/card_contents/Step1_3";
-import Step1_4 from "../components/card_contents/Step1_4";
+import Step3_1 from "../components/card_contents/Step3_1";
+import Step3_2 from "../components/card_contents/Step3_2";
+import Step3_3 from "../components/card_contents/Step3_3";
 import { useState } from "react";
 
 function Step1() {
@@ -15,10 +14,9 @@ function Step1() {
 		<div className="container">
 			<Header step="3">お題に合わせて制作する</Header>
 			<Card finished={finished} onFinishButtonClick={() => {}}>
-				<Step1_1 />
-				<Step1_2 />
-				<Step1_3 />
-				<Step1_4 onExpire={() => setFinished(true)} />
+				<Step3_1 />
+				<Step3_2 />
+				<Step3_3 onExpire={() => setFinished(true)} />
 			</Card>
 		</div>
 	);
