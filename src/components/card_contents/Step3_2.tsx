@@ -12,7 +12,13 @@ function CardContexnxt() {
 					なるべく時間内に制作できるようにチームで協力しましょう！
 				</p>
 			</div>
-			<img className={styles.img} src="images/step3_2.png" alt="" />
+			<img
+				className={styles.img}
+				width={609}
+				height={252}
+				src="images/step3_2.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

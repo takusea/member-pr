@@ -12,7 +12,13 @@ function CardContexnxt() {
 					やりたいと思っていることなど、あなたが興味のあることを記入してください！
 				</p>
 			</div>
-			<img className={styles.img} src="images/step2_2.png" alt="" />
+			<img
+				className={styles.img}
+				width={745}
+				height={202}
+				src="images/step2_2.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

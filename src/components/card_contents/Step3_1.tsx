@@ -12,7 +12,13 @@ function CardContentV() {
 					以下の4つの中から制作物のお題を選び、PRするメンバーを決めてください。
 				</p>
 			</div>
-			<img className={styles.img} src="images/step3_1.png" alt="" />
+			<img
+				className={styles.img}
+				width={838}
+				height={244}
+				src="images/step3_1.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

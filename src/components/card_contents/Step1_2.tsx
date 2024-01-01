@@ -22,7 +22,13 @@ function CardContexnxt() {
 						</p>
 					</div>
 				</div>
-				<img className={styles.img} src="images/step1_2.png" alt="" />
+				<img
+					className={styles.img}
+					width={262}
+					height={375}
+					src="images/step1_2.png"
+					alt=""
+				/>
 			</div>
 		</CardContent>
 	);

@@ -4,7 +4,7 @@ import LinkButton from "../components/base/LinkButton";
 function Top() {
 	return (
 		<div className={styles.container}>
-			<img src="images/logo.png" alt="" />
+			<img src="images/logo.png" width={459} height={168} alt="" />
 			<p className={styles.text}>
 				対話を通してお互いの強みをみつけ、
 				<br />

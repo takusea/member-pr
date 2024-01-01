@@ -20,7 +20,7 @@ function Start() {
 					カードを使った対話や制作を通してメンバーの「人物像が明確化」されることで、新人はチームに馴染みやすくなるように、現メンバーはさらに強みを活かせるように、チーム全体の心理的安全性の向上させることを目的にしています。
 				</p>
 			</div>
-			<img src="images/start.png" alt="" />
+			<img src="images/start.png" width={582} height={248} alt="" />
 			<div className={styles.footer}>
 				<LinkButton type="text" icon="left_arrow" to="/">
 					戻る

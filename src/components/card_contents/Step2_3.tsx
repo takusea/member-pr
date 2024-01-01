@@ -12,7 +12,13 @@ function CardContentss() {
 					強みの欄に移動させてください！ペア数はいくつでもOKです。
 				</p>
 			</div>
-			<img className={styles.img} src="images/step2_3.png" alt="" />
+			<img
+				className={styles.img}
+				width={840}
+				height={212}
+				src="images/step2_3.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

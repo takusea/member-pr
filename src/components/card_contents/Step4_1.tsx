@@ -12,7 +12,13 @@ function CardContentV() {
 					反映させたのか、代表者の方はこだわりを教えてください！
 				</p>
 			</div>
-			<img className={styles.img} src="images/step4_1.png" alt="" />
+			<img
+				className={styles.img}
+				width={562}
+				height={262}
+				src="images/step4_1.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

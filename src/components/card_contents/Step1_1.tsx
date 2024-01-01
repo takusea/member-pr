@@ -12,7 +12,13 @@ function CardContentV() {
 					1人ずつ答える役と深ぼる役になり、対話の順番を回していきましょう。
 				</p>
 			</div>
-			<img className={styles.img} src="images/step1_1.png" alt="" />
+			<img
+				className={styles.img}
+				width={505}
+				height={264}
+				src="images/step1_1.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

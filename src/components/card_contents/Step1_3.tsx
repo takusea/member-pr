@@ -14,7 +14,13 @@ function CardContentss() {
 					は記入してください！思い付かない場合は深ぼり役以外のメンバーもどんどん質問していきましょう！
 				</p>
 			</div>
-			<img className={styles.img} src="images/step1_3.png" alt="" />
+			<img
+				className={styles.img}
+				width={532}
+				height={174}
+				src="images/step1_3.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }

@@ -12,7 +12,13 @@ function CardContentV() {
 					以下の公式に従って、自身の強みとなるものをみつけていきます。
 				</p>
 			</div>
-			<img className={styles.img} src="images/step2_1.png" alt="" />
+			<img
+				className={styles.img}
+				width={684}
+				height={256}
+				src="images/step2_1.png"
+				alt=""
+			/>
 		</CardContent>
 	);
 }
