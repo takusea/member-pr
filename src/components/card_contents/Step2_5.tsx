@@ -35,8 +35,8 @@ function CardContentV(props: Props) {
 			<div className={`${styles.section} ${styles.section_center}`}>
 				<img
 					className={styles.img}
-					width={745}
-					height={202}
+					width={261}
+					height={190}
 					src="images/step2.png"
 					alt=""
 				/>
