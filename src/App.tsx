@@ -10,7 +10,7 @@ import Top from "./pages/top";
 
 function App() {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename={process.env.PUBLIC_URL}>
 			<Routes>
 				<Route index element={<Top />} />
 				<Route path="start" element={<Start />} />
