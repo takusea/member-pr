@@ -15,10 +15,12 @@ export const styles = {
 		transition: "background-color 0.2s",
 		":disabled": {
 			opacity: 0,
+			pointerEvents: "none",
 		},
 	}),
 	root_disabled: style({
 		opacity: 0,
+		pointerEvents: "none",
 	}),
 	root_reverse: style({
 		flexDirection: "row-reverse",
