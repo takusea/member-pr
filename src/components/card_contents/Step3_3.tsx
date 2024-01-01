@@ -45,7 +45,9 @@ function CardContentV(props: Props) {
 					<Button
 						type="fill"
 						onClick={() => {
-							start();
+							const _time = new Date();
+							_time.setSeconds(_time.getSeconds() + 2400);
+							restart(_time);
 							setStarted(true);
 						}}
 					>
