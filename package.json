@@ -13,8 +13,10 @@
 		"fix:format": "biome lint --apply ./"
 	},
 	"dependencies": {
+		"@generouted/react-router": "^1.17.1",
 		"@vanilla-extract/css": "^1.14.0",
 		"destyle.css": "^4.0.0",
+		"generouted": "^1.17.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.21.1",
