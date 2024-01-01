@@ -1,6 +1,7 @@
 import { Children, ReactNode, useState } from "react";
 import { styles } from "./Card.css.ts";
 import Button from "./Button.tsx";
+import LinkButton from "./LinkButton.tsx";
 
 type Props = {
 	children: ReactNode;
@@ -51,9 +52,9 @@ function Card(props: Props) {
 						</Button>
 					</>
 				) : (
-					<Button type="text" onClick={props.onFinishButtonClick}>
+					<LinkButton type="text" to="/process">
 						終了
-					</Button>
+					</LinkButton>
 				)}
 			</div>
 		</div>
