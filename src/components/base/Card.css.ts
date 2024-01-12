@@ -10,7 +10,6 @@ export const styles = {
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "stretch",
-		gap: 40,
 	}),
 	content: style({
 		overflow: "hidden",
