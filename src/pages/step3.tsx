@@ -16,7 +16,7 @@ function Step1() {
 			<Card finished={finished} onFinishButtonClick={() => {}}>
 				<Step3_1 />
 				<Step3_2 />
-				<Step3_3 onExpire={() => setFinished(true)} />
+				<Step3_3 onStart={() => setFinished(true)} />
 			</Card>
 		</div>
 	);

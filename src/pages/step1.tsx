@@ -18,7 +18,7 @@ function Step1() {
 				<Step1_1 />
 				<Step1_2 />
 				<Step1_3 />
-				<Step1_4 onExpire={() => setFinished(true)} />
+				<Step1_4 onStart={() => setFinished(true)} />
 			</Card>
 		</div>
 	);

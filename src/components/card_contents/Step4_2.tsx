@@ -6,7 +6,7 @@ import { useState } from "react";
 import Icon from "../base/Icon.tsx";
 
 type Props = {
-	onExpire: () => void;
+	onStart: () => void;
 };
 
 const time = new Date();
@@ -18,8 +18,7 @@ function CardContentV(props: Props) {
 	const { seconds, minutes, restart } = useTimer({
 		expiryTimestamp: time,
 		autoStart: false,
-		onExpire: props.onExpire,
-	});
+  });
 
 	return (
 		<CardContent>
@@ -55,6 +54,7 @@ function CardContentV(props: Props) {
 							_time.setSeconds(_time.getSeconds() + 2400);
 							restart(_time);
 							setStarted(true);
+              props.onStart();
 						}}
 					>
 						開始

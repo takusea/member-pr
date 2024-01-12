@@ -14,7 +14,7 @@ function Step1() {
 			<Header step="4">メンバーの魅力をPRする</Header>
 			<Card finished={finished} onFinishButtonClick={() => {}}>
 				<Step4_1 />
-				<Step4_2 onExpire={() => setFinished(true)} />
+				<Step4_2 onStart={() => setFinished(true)} />
 			</Card>
 		</div>
 	);

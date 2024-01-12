@@ -20,7 +20,7 @@ function Step1() {
 				<Step2_2 />
 				<Step2_3 />
 				<Step2_4 />
-				<Step2_5 onExpire={() => setFinished(true)} />
+				<Step2_5 onStart={() => setFinished(true)} />
 			</Card>
 		</div>
 	);
