@@ -54,7 +54,7 @@ function CardContentV(props: Props) {
 							_time.setSeconds(_time.getSeconds() + 2400);
 							restart(_time);
 							setStarted(true);
-              props.onStart();
+							props.onStart();
 						}}
 					>
 						開始
