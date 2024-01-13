@@ -9,14 +9,13 @@ type Props = {
 	onStart: () => void;
 };
 
-const time = new Date();
-time.setSeconds(time.getSeconds() + 2400);
+const timeLimit = 2400;
 
 function CardContentV(props: Props) {
 	const [isStarted, setStarted] = useState(false);
 
 	const { seconds, minutes, restart } = useTimer({
-		expiryTimestamp: time,
+		expiryTimestamp: new Date(),
 		autoStart: false,
 	});
 
@@ -27,7 +26,7 @@ function CardContentV(props: Props) {
 					<span className={styles.desc_icon}>
 						<Icon name="timer" />
 					</span>
-					40分程度
+					{timeLimit / 60}分程度
 				</div>
 				<h2 className={styles.headline}>準備ができたら開始してください</h2>
 			</div>
@@ -51,7 +50,7 @@ function CardContentV(props: Props) {
 						type="fill"
 						onClick={() => {
 							const _time = new Date();
-							_time.setSeconds(_time.getSeconds() + 2400);
+							_time.setSeconds(_time.getSeconds() + timeLimit);
 							restart(_time);
 							setStarted(true);
 							props.onStart();
