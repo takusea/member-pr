@@ -12,7 +12,7 @@ function Step1() {
 	return (
 		<div className="container">
 			<Header step="4">メンバーの魅力をPRする</Header>
-			<Card finished={finished} onFinishButtonClick={() => {}}>
+			<Card finished={finished} finishLink="/finish">
 				<Step4_1 />
 				<Step4_2 onStart={() => setFinished(true)} />
 			</Card>

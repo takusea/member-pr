@@ -5,8 +5,8 @@ import LinkButton from "./LinkButton.tsx";
 
 type Props = {
 	children: ReactNode;
-	onFinishButtonClick: () => void;
 	finished: boolean;
+	finishLink?: string;
 };
 
 function Card(props: Props) {
@@ -51,10 +51,12 @@ function Card(props: Props) {
 							次へ
 						</Button>
 					</>
-				) : (
-					<LinkButton type="text" to="/process">
+				) : props.finishLink ? (
+					<LinkButton type="text" to={props.finishLink ?? "/process"}>
 						終了
 					</LinkButton>
+				) : (
+					""
 				)}
 			</div>
 		</div>

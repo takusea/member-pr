@@ -4,6 +4,7 @@
 import { components, hooks, utils } from "@generouted/react-router/client";
 
 export type Path =
+	| `/finish`
 	| `/process`
 	| `/product`
 	| `/start`
@@ -11,7 +12,8 @@ export type Path =
 	| `/step2`
 	| `/step3`
 	| `/step4`
-	| `/top`;
+	| `/top`
+	| `/finish`;
 
 export type Params = {};
 
