@@ -11,8 +11,8 @@ function CardContentV() {
 			</div>
 			<img
 				className={styles.img}
-				width={562}
-				height={262}
+				width={542}
+				height={383}
 				src="images/step4_3.png"
 				alt=""
 			/>

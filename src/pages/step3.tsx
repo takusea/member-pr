@@ -13,7 +13,7 @@ function Step1() {
 	return (
 		<div className="container">
 			<Header step="3">お題に合わせて制作する</Header>
-			<Card finished={finished}>
+			<Card finished={finished} finishLink="/process">
 				<Step3_1 />
 				<Step3_2 />
 				<Step3_3 onStart={() => setFinished(true)} />

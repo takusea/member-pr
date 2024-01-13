@@ -15,7 +15,7 @@ function Step1() {
 	return (
 		<div className="container">
 			<Header step="2">自身の強みをみつける</Header>
-			<Card finished={finished}>
+			<Card finished={finished} finishLink="/process">
 				<Step2_1 />
 				<Step2_2 />
 				<Step2_3 />

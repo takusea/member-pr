@@ -14,7 +14,7 @@ function Step1() {
 	return (
 		<div className="container">
 			<Header step="1">カードを使って対話をする</Header>
-			<Card finished={finished}>
+			<Card finished={finished} finishLink="/process">
 				<Step1_1 />
 				<Step1_2 />
 				<Step1_3 />

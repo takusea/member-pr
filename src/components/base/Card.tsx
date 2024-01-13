@@ -52,7 +52,7 @@ function Card(props: Props) {
 						</Button>
 					</>
 				) : props.finishLink ? (
-					<LinkButton type="text" to={props.finishLink ?? "/process"}>
+					<LinkButton type="text" to={props.finishLink}>
 						終了
 					</LinkButton>
 				) : (

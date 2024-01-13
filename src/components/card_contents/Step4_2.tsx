@@ -9,7 +9,7 @@ type Props = {
 	onStart: () => void;
 };
 
-const timeLimit = 1;
+const timeLimit = 900;
 
 function CardContentV(props: Props) {
 	const [isStarted, setStarted] = useState(false);
