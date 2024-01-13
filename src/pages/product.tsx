@@ -1,4 +1,5 @@
 import LinkButton from "../components/base/LinkButton.tsx";
+import Product from "../components/base/Product.tsx";
 import { styles } from "./product.css.ts";
 
 function Step1() {
@@ -6,10 +7,18 @@ function Step1() {
 		<div className={styles.container}>
 			<div className={styles.header}>
 				<ul className={styles.tab}>
-					<li className={styles.tab_item}>〇〇〇〇〇〇</li>
-					<li className={styles.tab_item}>〇〇〇〇〇〇</li>
-					<li className={styles.tab_item}>〇〇〇〇</li>
-					<li className={styles.tab_item}>〇〇〇〇〇〇〇〇</li>
+					<li className={styles.tab_item} style={{ zIndex: "3" }}>
+						すべて
+					</li>
+					<li className={styles.tab_item} style={{ zIndex: "2" }}>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li className={styles.tab_item} style={{ zIndex: "1" }}>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
+					<li className={styles.tab_item} style={{ zIndex: "0" }}>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+					</li>
 				</ul>
 				<div className={styles.home_button}>
 					<LinkButton type="text" iconRightSide icon="home" to="/">
@@ -18,10 +27,12 @@ function Step1() {
 				</div>
 			</div>
 			<div className={styles.card}>
-				<div>
-					<img src="images/product_ex.png" alt="" />
-					<p>制作日 2023/11/23</p>
-				</div>
+				<Product createdDate="2023/12/13" imagePath="images/product_1.png" />
+				<Product createdDate="2023/12/13" imagePath="images/product_2.png" />
+				<Product createdDate="2023/12/13" imagePath="images/product_3.png" />
+				<Product createdDate="2023/12/18" imagePath="images/product_4.png" />
+				<Product createdDate="2023/12/18" imagePath="images/product_5.png" />
+				<Product createdDate="2023/12/18" imagePath="images/product_6.png" />
 			</div>
 		</div>
 	);

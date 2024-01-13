@@ -5,6 +5,6 @@ import generouted from "@generouted/react-router/plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: process.env.GITHUB_PAGES ? "member-pr" : "./",
+	base: "member-pr",
 	plugins: [react(), vanillaExtractPlugin(), generouted()],
 });
